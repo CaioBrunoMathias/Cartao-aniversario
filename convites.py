@@ -10,6 +10,7 @@ lista = ['Helder Barbalho','Daniela Barbalho','Luiziel Guedes',
 
 
 fonte = ImageFont.truetype('./Gabriola.ttf',size=38)
+caminho = r'C:\Users\Caio\PycharmProjects\pythonProject\Mae'
 
 for e in lista:
     imagem = Image.open('convite_.jpg')
@@ -18,4 +19,4 @@ for e in lista:
 
     lapis.text((600,200), text = f'Sr(a) {e}', fill = '#875e26', font=fonte)
 
-    imagem.save(f'./convite_{e.strip()}.png')
+    imagem.save(f'{caminho}/convite_{e.strip()}.png')
